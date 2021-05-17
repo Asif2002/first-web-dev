@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+nav, header, footer {
+  display: block;
+}
+
+body{
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta', sans-serif;
+
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+ 
+}
+
+
+
+
+/* ####### navigation bar ############### */
+
+nav{
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: rgba(128, 111, 255, 0.774);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.nav__list li{
+  list-style: none;
+
+  float: left;
+}
+ul.nav__list li.nav__list-item-sign{
+  float: right;
+}
+
+.nav__link{
+  text-decoration: none;
+  display: block;
+  min-height: 16px;
+  text-align: right;
+  padding: 16px;
+  color: white;
+  text-transform: uppercase;
+}
+.nav__link:hover{
+  background-color: rgb(95, 95, 95);
+  color: rgb(233, 233, 107);
+  transition: 0.07s;
+}
+ 
+.nav__list-item-dropDown{
+  display: none;
+}
+
+/* ######## Mobile ##### */
+
+@media screen and (max-width: 850px){
+  ul.nav__list li:not(:nth-child(1)) {
+    display: none;
+  }
+
+ul.nav__list li.nav__list-item-dropDown{
+  display: block;
+  float: right;
+}
+
+ul.nav__list.responsive li.nav__list-item-dropDown{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.nav__list.responsive{
+  position: relative;
+}
+
+ul.nav__list.responsive li{
+  display: inline;
+  float: none;
+}
+
+ul.nav__list.responsive li a{
+  display: block;
+  text-align: left;
+}
+.anime{
+  padding-left: 50%;
+
+ 
+}
+.anime-img{
+ 
+  width: 100%;
+}
+div.col-7{
+  width: 100%;
+  margin: 0;
+}
+div.col-6{
+  width: 100%;
+  margin: 0;
+}
+div.col-4{
+  width: 100%;
+  margin: 0;
+}
+div.box{
+  padding: 5px;
+  display: block;
+}
+div.mobilestack{
+  width: 50%;
+  display: block;
+}
+
+div.rightside-col,
+div.leftside-col{
+  margin: 15px;
+}
+input[type=text]{
+  width: 350px;
+}
+
+.videocontainer iframe{
+  position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+}
+/* ####### navigation bar ############### */
+
+/* ##### Custom Styles####### */
+ 
+#section-1-gradient{
+  background: linear-gradient(#4a78f7, #106cf7);
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+h1.large{
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  line-height: 70px;
+}
+
+input[type="text"]{
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+form h2 {
+  color: white;
+}
+
+.leftside-col {
+  margin-left: 30%;
+}
+ 
+.rightside-col{
+  margin-left: 30%;
+}
+
+.secondHeader{
+  font-size:65px;
+  text-align: center;
+}
+
+div.box{
+  background-color: white;
+  box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.75);
+  text-align: center;
+  margin: 20px;
+  padding: 34px 24px 40px 24px;
+}
+
+img{
+  width: 70px;
+  height: 70px;
+}
+
+label{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 20px;
+  
+}
+
+button{
+  font-size: 20px;
+  color: white;
+  background-color: blueviolet;
+  font-weight: 700;
+  padding: 15px 60px;
+  display: block;
+  text-align: center;
+  margin: 5px;
+  border-radius: 7px;
+}
+button.learn-more{
+  margin: auto;
+}
+button.learn-more:hover{
+  color: greenyellow;
+  background-color: indigo;
+  transition: 0.3s;
+}
+article p {
+  font-size: 25px;
+  padding: 20px;
+}
+
+.anime-img{
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, .85);
+
+}
+
+footer.footer{
+  background-color: rgba(128, 111, 255, 0.774);
+}
+footer.footer h1{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+footer.footer ul{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer.footer ul li{
+  color: white;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+
